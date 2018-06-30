@@ -203,24 +203,27 @@ public class NetworkUtilities {
         return String.valueOf(urlConnection.getResponseCode());
     }
 
-    public static JSONObject parseInputStream(InputStream inputStream){
-        //read the inputStream
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-        StringBuilder builder = new StringBuilder();
-        JSONObject response = new JSONObject();
-        String currentLine;
+    public static String requestDeleteToHttpUrl(URL url) throws Exception{
+        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+        urlConnection.setRequestMethod("DELETE");
+        urlConnection.setRequestProperty("Content-Type","application/json;charset=UTF-8");
+        urlConnection.setDoInput(true);
+        urlConnection.setDoOutput(true);
 
-        //Break it into lines of String and store it in String using StringBuilder
-        try {
-            while ((currentLine = reader.readLine()) != null){
-                builder.append(currentLine);
-            }
-            //Use JSONTokener to convert the String to JsonObject
-            JSONTokener jsonTokener = new JSONTokener(builder.toString());
-            response = new JSONObject(jsonTokener);
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-        return response;
+//        JSONObject jsonObject = new JSONObject();
+//        jsonObject.put("value", 8.5);
+
+//        Log.i("JSON-POST", jsonObject.toString());
+//        DataOutputStream outputStream = new DataOutputStream(urlConnection.getOutputStream());
+//        outputStream.writeBytes(jsonObject.toString());
+//        outputStream.flush();
+//        outputStream.close();
+
+        Log.i("DELETE-STATUS", String.valueOf(urlConnection.getResponseCode()));
+        Log.i("DELETE-MSG", urlConnection.getResponseMessage());
+
+        urlConnection.disconnect();
+        return String.valueOf(urlConnection.getResponseCode());
     }
+
 }

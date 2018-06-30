@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26A69A</color>
+    <color name="colorPrimaryDark">#26A69A</color>
+    <color name="colorAccent">#f1c40f</color>
+    <color name="colorPrimaryLight">#B2DFDB</color>
+
+    <!--button effect-->
+    <color name="buttonPressed">#ffff4444</color>
+
+    <!--menu effect-->
+    <color name="favorite">#FFC107</color>
+    <color name="notFavorite">#7D7D7E</color>
+</resources>

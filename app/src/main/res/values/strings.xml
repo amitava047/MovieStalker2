@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Movie Stalker</string>
+    <string name="preference_file_key">TMDB_Session</string>
+    <string name="preference_session_key">Session_ID</string>
+    <string-array name="sort_by_option">
+        <item>Popularity</item>
+        <item>Rating</item>
+        <item>Favorite</item>
+    </string-array>
+    <!--Movie Details page materials-->
+    <string name="error_message">Connection Error!</string>
+    <string name="movie_poster_content_desc">Movie Poster Image</string>
+    <string name="movie_title_forPreview">Movie Name</string>
+    <string name="movie_release_date_label">Release Date</string>
+    <string name="movie_release_date_forPreview">19th May, 1995</string>
+    <string name="movie_rating_label">Rating</string>
+    <string name="movie_rating_forPreview">7.9</string>
+    <string name="movie_synopsis_label">Synopsis</string>
+    <string name="movie_synopsis_forPreview">In this section the movie synopsis will be written in the shown format</string>
+    <string name="menu_content_desc">Add to Favorite Button</string>
+    <string name="add_to_fav_tip">Add to Favorite</string>
+    <string name="trailer_button_content_desc">Watch Trailer</string>
+    <string name="trailer_button_text">Trailer</string>
+
+    <!--User Reviews materials-->
+    <string name="user_reviews_title">User Reviews</string>
+    <string-array name="user_reviews_fake_list_forPreview">
+        <item>John Doe</item>
+        <item>Nicole Ray</item>
+        <item>John Wick</item>
+        <item>John Doe</item>
+        <item>Nicole Ray</item>
+        <item>John Wick</item>
+        <item>John Doe</item>
+        <item>Nicole Ray</item>
+        <item>John Wick</item>
+        <item>John Doe</item>
+        <item>Nicole Ray</item>
+        <item>John Wick</item>
+        <item>John Doe</item>
+        <item>Nicole Ray</item>
+        <item>John Wick</item>
+        <item>John Doe</item>
+        <item>Nicole Ray</item>
+        <item>John Wick</item>
+        <item>John Doe</item>
+        <item>Nicole Ray</item>
+        <item>John Wick</item>
+    </string-array>
+</resources>
